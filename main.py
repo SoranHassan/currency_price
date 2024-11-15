@@ -147,23 +147,8 @@ async def server_timeout(event):
 
     await bot.edit_message(event.message, message=f"{time_expire}")
 
-@bot.on(events.NewMessage(outgoing=True, pattern=r".mob"))
-async def mobile(event):
 
-    print("Req To Mobile")
-    print(time_request())
 
-    text = f"`09223879760`"
-    await bot.edit_message(event.message, message=f'{text}')
-
-@bot.on(events.NewMessage(outgoing=True, pattern=r".bnk"))
-async def bank(event):
-
-    print("Req To Bank")
-    print(time_request())
-
-    text = f"`6219861949457062`\n**سوران حسن - بانک سامان**"
-    await bot.edit_message(event.message, message=f'{text}')
 
 
 
